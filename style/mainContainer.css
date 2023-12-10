@@ -1,0 +1,97 @@
+.main-container
+{
+    position: relative;
+    top: 4.4rem;
+    padding: 10px;
+}
+.main-container-margin 
+{
+    width: 1200px;
+    margin: auto;
+}
+.main-container-header
+{
+    padding: 20px 0 40px 0;
+    font-size: 22px;
+    text-align: center;
+}
+/*------main container add player--------*/
+.main-container .add-player
+{
+    background-color: var(--tertiary-background);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    flex-wrap: wrap;
+    padding: 10px;
+    align-items: center;
+    gap: 10px;
+}
+.main-container .add-player label 
+{
+    color: #ffffff;
+}
+.main-container .add-player input 
+{   
+    padding: 2px 10px 2px 10px;
+    width: 100%;
+}
+.main-container .add-player .grid 
+{
+    display: flex;
+    align-items: center;
+}
+.main-container .add-player button 
+{
+    background-color: var(--secondary-background);
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+.main-container ul 
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 3rem;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+/*------main container add player javascript results data design--------*/
+
+.main-container .playerList li {
+
+    list-style: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.main-container .playerList li img {
+    display: flex;
+    margin: auto;
+}
+.main-container .playerList li div {
+    margin-top: 10px;
+}
+.main-container .playerList li div strong {
+    font-weight: bold;
+    margin-right: 5px;
+}
+.main-container .playerList li button {
+    margin-top: 10px;
+    margin-right: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #04AA6D;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+.main-container .playerList li button:hover {
+    background-color: #282A35;
+}
+
+

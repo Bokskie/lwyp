@@ -1,0 +1,15 @@
+@import 'header.css';
+@import 'mainContainer.css';
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif
+}
+:root
+{
+    --primary-background: #282A35;
+    --secondary-background: #04AA6D;
+    --tertiary-background: #2E3140;
+}

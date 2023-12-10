@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LWYP</title>
+    <link rel="stylesheet" type="text/css" href="./style/index.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="header-margin">
+            <div class="header-container">
+                <div class="header-logo">
+                    <img src="./image/logo.jfif" width="50" height="50" alt="LWYP-logo">
+                    <div class="header_logo-name">LWYP</div>
+                </div>
+
+                <div class="header-navbar">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Records</a></li>
+                        <li><a href="">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-container" id="app">
+        <div class="main-container-margin">
+            <div class="main-container-header">Lawaya Passive Ball Club Player's Management</div>
+            <div class="add-player">
+
+                <div class="name grid">
+                    <label for="nameInput">Name:</label>
+                    <input type="text" id="nameInput" />
+                </div>
+                <div class="position grid">
+                    <label for="positionInput">Position:</label>
+                    <select id="positionInput">
+                        <option value="Position 1">Position 1</option>
+                        <option value="Position 2">Position 2</option>
+                        <option value="Position 3">Position 3</option>
+                        <option value="Position 4">Position 4</option>
+                        <option value="Position 5">Position 5</option>
+                    </select>
+                </div>
+                <div class="age grid">
+                    <label for="ageInput">Age:</label>
+                    <input type="number" id="ageInput" />
+
+                </div>
+
+                <div class="status grid">
+                    <label for="statusInput">Status:</label>
+                    <select id="statusInput">
+                        <option value="single">Single</option>
+                        <option value="taken">Taken</option>
+                        <option value="marriage">Married</option>
+                    </select>
+                </div>
+
+                <div class="description grid">
+                    <label for="descriptionInput">Descriptions:</label>
+                    <input type="text" id="descriptionInput" />
+                </div>
+
+                <div class="photo grid">
+                    <label for="photoInput">Photo:</label>
+                    <input type="file" id="photoInput" accept="image/*" />
+
+                </div>
+
+                <button onclick="addPlayer()">Add Player</button>
+            </div>
+            <ul class="playerList" id="playerList"></ul>
+        </div>
+
+
+        <div id="editForm" style="display: none;">
+            <h2>Edit Player</h2>
+            <label for="editNameInput">Name:</label>
+            <input type="text" id="editNameInput" />
+
+            <label for="editPositionInput">Position:</label>
+            <select id="editPositionInput">
+                <option value="Position 1">Position 1</option>
+                <option value="Position 2">Position 2</option>
+                <option value="Position 3">Position 3</option>
+                <option value="Position 4">Position 4</option>
+                <option value="Position 5">Position 5</option>
+            </select>
+
+            <label for="editAgeInput">Age:</label>
+            <input type="number" id="editAgeInput" />
+
+            <label for="editStatusInput">Status:</label>
+            <select id="editStatusInput">
+                <option value="single">Single</option>
+                <option value="taken">Taken</option>
+                <option value="marriage">Married</option>
+            </select>
+
+            <label for="editDescriptionInput">Descriptions:</label>
+            <input type="text" id="editDescriptionInput" />
+
+            <label for="editPhotoInput">Photo:</label>
+            <input type="file" id="editPhotoInput" accept="image/*" />
+
+            <button id="updatePlayerButton" onclick="updatePlayer()">Update Player</button>
+        </div>
+
+    </div>
+
+    <!-- Add the following line to include the update.js script -->
+    <script src="./js/update.js"></script>
+    <script src="./js/crud.js"></script>
+</body>
+
+</html>
